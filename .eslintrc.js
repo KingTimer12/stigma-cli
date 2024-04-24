@@ -14,5 +14,8 @@ module.exports = {
     'prettier',
     'plugin:prettier/recommended',
   ],
-  rules: {},
+  plugins: ["simple-import-sort"],
+  rules: {
+    "simple-import-sort/imports": "error"
+  },
 }

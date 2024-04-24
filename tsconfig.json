@@ -15,11 +15,10 @@
     "noImplicitAny": false,
     "noImplicitThis": true,
     "noUnusedLocals": true,
-    "sourceMap": true,
     "inlineSourceMap": true,
     "outDir": "build",
     "strict": false,
-    "target": "es5",
+    "target": "es6",
     "declaration": true,
     "declarationDir": "build/types"
   },

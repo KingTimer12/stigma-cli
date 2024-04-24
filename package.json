@@ -1,18 +1,18 @@
 {
   "name": "stigma-cli",
   "version": "0.0.1",
-  "description": "stigma-cli CLI",
+  "description": "StigmaCLI is a Command Line that serves to facilitate the creation of RestAPI.",
   "private": true,
   "types": "build/types/types.d.ts",
   "bin": {
-    "stigma-cli": "bin/stigma-cli"
+    "stigma": "bin/stigma"
   },
   "scripts": {
     "clean-build": "rimraf -rf ./build",
     "compile": "tsc -p .",
     "copy-templates": "copyfiles ./src/templates/* ./build/templates",
-    "build": "yarn clean-build && yarn compile && yarn copy-templates",
-    "prepublishOnly": "yarn build",
+    "build": "pnpm clean-build && pnpm compile && pnpm copy-templates",
+    "prepublishOnly": "pnpm build",
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
     "test": "jest",
     "watch": "jest --watch",
